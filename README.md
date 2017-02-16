@@ -1,6 +1,9 @@
 # LoPy-DHT-transmission
 LoRa transmission of data from AM2302 temperature and humidity sensor
 
+Link to Pycom LoPy
+https://www.pycom.io/product/lopy/
+
 This project demonstrates sending of a temperature and humidity reading between a pair of Pycom LoPy devices.
 
 The sensor is a DHT22 AM2302 device
