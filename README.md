@@ -55,5 +55,7 @@ DHT22RinusW.py
 LoraMAC.py
   initialises the LoRa module and creates a socket for transmission/reception
   sends the required data to the LoRa transmitter
-  
+
+LoraMAC-RX
+  file running loop to receive data from the Lora interface and print to the console.  Edit main.py to call this function.
   for reception, the simpler process of receiving the data and printing to the console.
