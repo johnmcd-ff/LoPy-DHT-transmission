@@ -41,7 +41,7 @@ def decode(inp):
     for i in range(len(res)):
         for v in bits[i*8:(i+1)*8]:   #process next 8 bit
             res[i] = res[i]<<1  ##shift byte one place to left
-            if v > 7:                   #  less than 7 '1's is a zero, more than 7 1's in the sequence is a one
+            if v >= 7:                   #  less than 7 '1's is a zero, 7 or more 1's in the sequence is a one
                 res[i] = res[i]+1  ##and add 1 if lsb is 1
             # print ('res',  i,  res[i])
 
