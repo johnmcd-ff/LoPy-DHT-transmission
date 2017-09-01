@@ -10,7 +10,7 @@ def go_DHT():
     dht_pin(1)							# drive pin high to initiate data conversion on DHT sensor
     
     while (True):
-        temp, hum = DHT22(dht_pin)
+        temp, hum = DHT11(dht_pin)
         # temp = temp * 9 // 5 + 320   # uncomment for Fahrenheit
         temp_str = '{}.{}'.format(temp//10,temp%10)
         hum_str = '{}.{}'.format(hum//10,hum%10)
